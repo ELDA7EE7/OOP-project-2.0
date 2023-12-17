@@ -3,6 +3,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.util.ArrayList;
+import java.util.Random;
+
 public class Book {
     private static int bookCounter=0;
 
@@ -23,6 +25,7 @@ public class Book {
     private boolean isAvailable;
     private int daysTillReturn;
     private float totalPriceInShoppingCart;
+
 
     public Book(String title, String author, String status, int publishYear, float price, String genre, String coverPath, boolean isAvailable,int bookAmountAvailable, int daysTillReturn) {
         this.title = title;
