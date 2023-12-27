@@ -3,8 +3,8 @@ module com.example.libirary_ {
     requires javafx.fxml;
 
 
-    opens com.example.libirary_ to javafx.fxml;
-    exports com.example.libirary_;
+    opens com.example.bytebibliotheca to javafx.fxml;
+    exports com.example.bytebibliotheca;
 
     exports searchengine;
     opens searchengine to javafx.fxml;

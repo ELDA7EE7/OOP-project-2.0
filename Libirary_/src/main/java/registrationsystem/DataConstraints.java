@@ -2,8 +2,8 @@ package registrationsystem;
 
 import java.util.regex.Pattern;
 
-import static com.example.libirary_.MainClass.emailsTrie;
-import static com.example.libirary_.MainClass.namesTrie;
+import static com.example.bytebibliotheca.MainClass.emailsTrie;
+import static com.example.bytebibliotheca.MainClass.namesTrie;
 
 public interface DataConstraints {
     default boolean checkName(String username){
