@@ -60,7 +60,7 @@
             <TextField fx:id="promoCodeField" layoutX="1434.0" layoutY="789.0" prefHeight="60.0" prefWidth="215.0" styleClass="textfield1" AnchorPane.bottomAnchor="135.0" AnchorPane.rightAnchor="271.0" />
             <Label fx:id="promoCodeMessage" layoutX="1088.0" layoutY="794.0" styleClass="promoCode" text="Enter a Promocode" AnchorPane.bottomAnchor="142.0" AnchorPane.rightAnchor="515.0" />
             <Label layoutX="89.33333333333326" layoutY="840.6666666666666" styleClass="totalPrice" text="Total Price:" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="50.0" />
-            <Label fx:id="totalBooksPrice" layoutX="480.0" layoutY="824.6666666666666" styleClass="totalPrice" text="price" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="480.0" />
+            <Label fx:id="totalBooksPrice" layoutX="480.0" layoutY="824.6666666666666" styleClass="totalPrice" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="480.0" />
             <ScrollPane hbarPolicy="NEVER" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
                <content>
                   <VBox fx:id="shoppingCartBooksList" prefHeight="650.0" prefWidth="1820.0" style="-fx-background-color: #191919;">

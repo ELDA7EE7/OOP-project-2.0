@@ -1,6 +1,7 @@
 package com.example.bytebibliotheca;
 
 
+import FileHandlingPackage.FileHandling;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -133,10 +134,14 @@ public class ShoppingCartController implements Initializable {
     }
     @FXML
     void createNewOrder(){
-        orders.add(new Order(shoppingCart.getTotalPrice(),LocalDate.now(),shoppingCart.getBookCount()));
-        getCurrentUser().addOder(orders.get(orders.size()-1).getOrderId());
-
-        System.out.println(new Order(shoppingCart.getTotalPrice(), LocalDate.now(),shoppingCart.getBookCount()));
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirm Order");
+        alert.setHeaderText("You're about to make an order!");
+        alert.setContentText("Click OK to confirm the payment.");
+        if (alert.showAndWait().get() == ButtonType.OK){
+            orders.add(new Order(shoppingCart.getTotalPrice(),LocalDate.now(),shoppingCart.getBookCount()));
+            getCurrentUser().addOder(orders.get(orders.size()-1).getOrderId());
+        }
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

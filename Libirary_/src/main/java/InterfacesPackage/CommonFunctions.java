@@ -25,6 +25,13 @@ public interface CommonFunctions {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
+    }default void showAlert2(String message,String label){
+        // Alert
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(label);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 
 

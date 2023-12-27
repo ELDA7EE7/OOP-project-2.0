@@ -102,6 +102,10 @@ public class BookDetailsController implements Initializable, CommonFunctions {
         stage.setFullScreen(true);*/
     }
     @FXML
+    void confirmReview(){
+        showAlert2("Review confirmed, and is now being moderated based on our guidelines.","Review Confirmed");
+    }
+    @FXML
     void switchToUserProfile(MouseEvent e) throws IOException {
         profileIcon.setImage(profileIconOnClick);
         root= FXMLLoader.load(getClass().getResource("UserProfile.fxml"));
